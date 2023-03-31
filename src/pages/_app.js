@@ -30,6 +30,7 @@ export default function App({ Component, pageProps }) {
       setPlaylists(response.data);
     } catch (error) {
       console.error(error?.response?.data);
+      console.log("Se o erro for 'token inválido', delete o token manualmente!")
     }
   };
 
